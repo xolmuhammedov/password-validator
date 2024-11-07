@@ -47,12 +47,9 @@ class Program
         if (!Regex.IsMatch(password, @"[0-9]"))
             return false;
 
-        if (!Regex.IsMatch(password, @"[!@#$%^&*(),.?\"":{}|<>]")) //regex pattern
+        if (!Regex.IsMatch(password, @"[!@#$%^&*(),.?\"":{}|<>]")) // regex pattern
             return false;
 
         return true;
     }
 }
-
-
-
